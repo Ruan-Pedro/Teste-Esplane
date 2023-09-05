@@ -1,0 +1,110 @@
+.modal {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+}
+
+.modal .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--dark);
+    color: var(--color);
+    border-radius: 5px;
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.modal .modal-content img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modal .modal-content .content-info {
+    padding: 10px 20px;
+}
+
+.modal .modal-content .content-info h3{
+    color: var(--color);
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+.modal .modal-content .content-info p{
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}
+
+
+.modal .modal-content .content-info p span{
+    color: var(--color);
+}
+
+.modal .modal-content .content-info p b{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.modal .modal-content .content-info p a{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.modal .modal-content .content-info button{
+    background-color: var(--color-strong);
+    width: 100%;
+    padding: 10px 15px;
+    border: solid 1px var(--color-strong);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.modal .modal-content .content-info button:hover{
+    background-color: var(--color);
+}
+.modal .close-button {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: rgb(212, 45, 45);
+    width: 60px;
+    height: 55px;
+    padding-left: 10px;
+    padding-bottom: 55px;
+    display: flex;
+    justify-content: center;
+    border-radius: 0% 0% 0% 100%;
+}
+
+@media (max-width: 768px) {
+    .modal .modal-content {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        justify-content: flex-start;
+    }
+    .modal .modal-content img {
+        width: 100%;
+        height: 20%;
+    }
+
+    .modal .modal-content .content-info h3 {
+        color: var(--color);
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+        margin: 20px 0 10px;
+    }
+}

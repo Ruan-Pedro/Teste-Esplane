@@ -1,0 +1,83 @@
+#mylist-section {
+    width: 100%;
+    padding: 0 8vw;
+}
+
+#mylist-section h2{
+    padding: 40px;
+    font-size: 2rem;
+    color: var(--light);
+}
+
+#mylist-section .mylist-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#mylist-section .mylist-content ul.mylist{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 20px;
+    width: 80%;
+}
+
+#mylist-section .mylist-content ul.mylist li{
+    padding: 5px 25px;
+    background-color: var(--color-strong);
+    width: 90%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#mylist-section .mylist-content ul.mylist li:hover{
+    width: 95%;
+    background-color: var(--color);
+}
+
+#mylist-section .mylist-content ul.mylist li h4{
+    position: relative;
+    top: 25%;
+}
+
+#mylist-section .mylist-content ul.mylist img{
+    width: 25px;
+    position: relative;
+    left: 95%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #mylist-section {
+        padding: 0 4vw;
+    }
+
+    #mylist-section h2 {
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+    #mylist-section .mylist-content ul.mylist {
+        width: 100%;
+    }
+
+    #mylist-section .mylist-content ul.mylist li {
+        padding: 5px 15px;
+    }
+    #mylist-section .mylist-content ul.mylist li h4{
+        font-size: 1rem;
+        padding-right: 30px;
+        padding-bottom: 10px;
+    }
+    #mylist-section .mylist-content ul.mylist img {
+        width: 20px;
+        left: 90%;
+    }
+}
